@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="#77FFFFFF">
+
+        <!-- Saturation SeekBar -->
+        <TextView
+            android:id="@+id/brightness_seekbar_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="Saturation SeekBar"
+            android:text="@string/brightness"
+            android:textColor="@color/custom_white"
+            />
+
+        <SeekBar
+            android:id="@+id/brightness_seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/brightness_seekbar_text"
+            android:contentDescription="Saturation SeekBar"
+            android:max="100"
+            android:thumbTint="@color/custom_pink"
+            android:progressBackgroundTint="@color/custom_pink"
+            android:progressTint="@color/custom_pink"
+            />
+
+        <!-- Sharpness SeekBar -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/contrast_seekbar_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/brightness_seekbar_text"
+                android:layout_marginBottom="16dp"
+                android:contentDescription="Contrast SeekBar"
+                android:text="@string/contrast"
+                android:textColor="@color/custom_white"
+                />
+        </LinearLayout>
+
+        <SeekBar
+            android:id="@+id/contrast_seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/brightness_seekbar"
+            android:layout_toRightOf="@id/contrast_seekbar_text"
+            android:contentDescription="Sharpness SeekBar"
+            android:max="100"
+            android:thumbTint="@color/custom_pink"
+            android:progressBackgroundTint="@color/custom_pink"
+            android:progressTint="@color/custom_pink"/>
+
+        <TextView
+            android:id="@+id/hue_seekbar_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/contrast_seekbar_text"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="Hue SeekBar"
+            android:text="@string/hue"
+            android:textColor="@color/custom_white"
+            />
+
+        <SeekBar
+            android:id="@+id/hue_seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/contrast_seekbar"
+            android:layout_toRightOf="@id/hue_seekbar_text"
+            android:contentDescription="Sharpness SeekBar"
+            android:max="100"
+            android:thumbTint="@color/custom_pink"
+            android:progressBackgroundTint="@color/custom_pink"
+            android:progressTint="@color/custom_pink"/>
+
+        <TextView
+            android:id="@+id/saturation_seekbar_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hue_seekbar_text"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="Saturation SeekBar"
+            android:text="@string/saturation"
+            android:textColor="@color/custom_white"
+            />
+
+        <SeekBar
+            android:id="@+id/saturation_seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hue_seekbar"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@id/saturation_seekbar_text"
+            android:contentDescription="Saturation SeekBar"
+            android:max="100"
+            android:thumbTint="@color/custom_pink"
+            android:progressBackgroundTint="@color/custom_pink"
+            android:progressTint="@color/custom_pink"/>
+
+        <TextView
+            android:id="@+id/gamma_seekbar_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/saturation_seekbar_text"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="Gamma SeekBar"
+            android:text="@string/gamma"
+            android:textColor="@color/custom_white"
+            />
+
+        <SeekBar
+            android:id="@+id/gamma_seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/saturation_seekbar"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@id/gamma_seekbar_text"
+            android:contentDescription="Gamma SeekBar"
+            android:max="100"
+            android:thumbTint="@color/custom_pink"
+            android:progressBackgroundTint="@color/custom_pink"
+            android:progressTint="@color/custom_pink"/>
+
+        <TextView
+            android:id="@+id/sharpness_seekbar_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gamma_seekbar_text"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="Sharpness SeekBar"
+            android:text="@string/sharpness"
+            android:textColor="@color/custom_white"
+            />
+
+        <SeekBar
+            android:id="@+id/sharpness_seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gamma_seekbar"
+            android:layout_toRightOf="@id/gamma_seekbar_text"
+            android:contentDescription="Sharpness SeekBar"
+            android:max="100"
+            android:thumbTint="@color/custom_pink"
+            android:progressBackgroundTint="@color/custom_pink"
+            android:progressTint="@color/custom_pink"/>
+
+        <TextView
+            android:id="@+id/gain_seekbar_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sharpness_seekbar_text"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="Saturation SeekBar"
+            android:text="@string/gain"
+            android:textColor="@color/custom_white"
+            />
+
+        <SeekBar
+            android:id="@+id/gain_seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sharpness_seekbar"
+            android:layout_toRightOf="@id/sharpness_seekbar_text"
+            android:contentDescription="Sharpness SeekBar"
+            android:max="100"
+            android:thumbTint="@color/custom_pink"
+            android:progressBackgroundTint="@color/custom_pink"
+            android:progressTint="@color/custom_pink"/>
+
+        <TextView
+            android:id="@+id/tilt_seekbar_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gain_seekbar_text"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="Saturation SeekBar"
+            android:text="@string/white_balance"
+            android:textColor="@color/custom_white"
+            />
+
+        <SeekBar
+            android:id="@+id/tilt_seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gain_seekbar"
+            android:layout_toRightOf="@id/tilt_seekbar_text"
+            android:contentDescription="Sharpness SeekBar"
+            android:max="100"
+            android:thumbTint="@color/custom_pink"
+            android:progressBackgroundTint="@color/custom_pink"
+            android:progressTint="@color/custom_pink"/>
+
+        <TextView
+            android:id="@+id/zoom_seekbar_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tilt_seekbar_text"
+            android:contentDescription="Saturation SeekBar"
+            android:text="@string/zoom"
+            android:textColor="@color/custom_white"
+            />
+
+        <SeekBar
+            android:id="@+id/zoom_seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tilt_seekbar"
+            android:layout_toRightOf="@id/zoom_seekbar_text"
+            android:contentDescription="Sharpness SeekBar"
+            android:max="100"
+            android:thumbTint="@color/custom_pink"
+            android:progressBackgroundTint="@color/custom_pink"
+            android:progressTint="@color/custom_pink"/>
+        <!-- Reset Button -->
+        <Button
+            android:id="@+id/reset_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/zoom_seekbar_text"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="Reset Button"
+            android:text="Reset" />
+    </LinearLayout>
+</ScrollView>
